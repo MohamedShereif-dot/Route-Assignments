@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="CSS/bootstrap.min.css">
+<link rel="stylesheet" href="CSS/style.css">
+    <title>Login</title>
+</head>
+<body>
+    
+    <main>
+        <section>
+            <div class="container d-flex justify-content-center mt-5">
+                <div class="row">
+                    <div class="col ">
+                        <h2>Smart Login System</h2>
+                        <form class="d-flex flex-column text-center" id="formData">
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                            <input type="text" name="email" id="email" placeholder="Enter your email">
+                            <input type="password" name="password" id="password" placeholder="Enter your password" class="rounded-password">
+                            <p id="check" class="d-none"></p>
+                            <button type="button" id="FormBTN" onclick="submit()">Sign Up</button>
+                        </form>
+                        <h3 id="sign">You have an account? <a href="#" onclick="Signin(event)">SignIn</a></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="Js/index.js"></script>
+
+</body>
+</html>
